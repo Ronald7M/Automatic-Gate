@@ -1,7 +1,17 @@
 .but-setting{
+  
   top: 3%; /* Se poziționează la 10px de partea de sus */
   left: 7%; /* Se poziționează la 10px de partea stângă */
   position: absolute;
+}
+::ng-deep .but-setting .p-button {
+  background-color: rgba(0, 0, 0, 0) !important; /* Culoarea dorită */
+  color: white;
+  border: none;
+}
+::ng-deep .but-setting .p-button-icon {
+  color: #4e4d49 !important; /* Culoarea dorită */
+  font-size: 30px; 
 }
 .img-container {
   display: flex; /* Folosește flexbox pentru a centra imaginea */
