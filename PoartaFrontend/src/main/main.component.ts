@@ -163,53 +163,12 @@ export class MainComponent implements OnInit  {
     });
   }
 
-  ///for button
-
-  private pressTimer: any;
-  private longPressDuration: number = 5000;
 
 
-  onTouchStart() {
-    this.startPressTimer();
-  }
 
 
-  onTouchEnd() {
-    this.clearPressTimer();
-  }
 
-  onTouchCancel() {
-    this.clearPressTimer();
-  }
-
-
-  onMouseDown() {
-    this.startPressTimer();
-  }
-
-
-  onMouseUp() {
-    this.clearPressTimer();
-  }
-
-  onMouseLeave() {
-    this.clearPressTimer();
-  }
-
-
-  private startPressTimer() {
-    this.pressTimer = setTimeout(() => {
-      this.onLongPress();
-    }, this.longPressDuration);
-  }
-
-
-  private clearPressTimer() {
-    clearTimeout(this.pressTimer);
-  }
-
-
-  private onLongPress() {
+  public onLongPress() {
    this.step=0;
   }
 

@@ -1,3 +1,8 @@
+.but-setting{
+  top: 3%; /* Se poziționează la 10px de partea de sus */
+  left: 7%; /* Se poziționează la 10px de partea stângă */
+  position: absolute;
+}
 .img-container {
   display: flex; /* Folosește flexbox pentru a centra imaginea */
   justify-content: center; /* Centrează imaginea pe orizontală */

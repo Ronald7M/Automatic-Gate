@@ -3,8 +3,9 @@
 @if(true){
 @if (step===1){
 <div class="content">
-  <div class="img-container">
 
+  <div class="img-container">
+    <p-button class="but-setting" icon="pi pi-cog" [rounded]="true" (onClick)="onLongPress()" ></p-button>
     @if (!checked){
     @if (getResponse===true){
       <img src="door_open.png" alt="Imaginea lipseste" class="responsive-image" />
@@ -21,8 +22,7 @@
       </div>
     }
   </div>
-  <p-button  [rounded]="true"  (touchstart)="onTouchStart()" (touchend)="onTouchEnd()" (touchcancel)="onTouchCancel()"
-             (mousedown)="onMouseDown()" (mouseup)="onMouseUp()" (mouseleave)="onMouseLeave()"  (onClick)="onClick()  ">
+  <p-button  [rounded]="true"  (onClick)="onClick()  ">
     @if (wait){
       <i class="pi pi-spin pi-spinner" style="font-size: 4rem"></i>
     }@else{
